@@ -337,3 +337,7 @@ footer {
     height: 400px;
     margin: -50px 0 0 -100px;
 }
+
+#vk_groups, #vk_groups iframe {
+    width: 100% !important;
+}

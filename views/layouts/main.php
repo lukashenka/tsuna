@@ -82,7 +82,7 @@ AppAsset::register($this);
 <!-- Footer -->
 <footer>
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
-    <div class="col-lg-12">
+    <div class="col-lg-12  text-vertical-center">
         <!-- VK Widget -->
         <div id="vk_groups"></div>
         <script type="text/javascript">
