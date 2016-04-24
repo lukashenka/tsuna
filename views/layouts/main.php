@@ -26,7 +26,8 @@ AppAsset::register($this);
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+          rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -45,7 +46,8 @@ AppAsset::register($this);
     <div class="container topnav">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -75,22 +77,31 @@ AppAsset::register($this);
     <!-- /.container -->
 </nav>
 
-<?=$content?>
+<?= $content ?>
 
 <!-- Footer -->
 <footer>
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
-
-    <!-- VK Widget -->
-    <div id="vk_groups"></div>
-    <script type="text/javascript">
-        VK.Widgets.Group("vk_groups", {mode: 0, width: "1200", height: "40", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 86495283);
-    </script>
+    <div class="col-lg-12">
+        <!-- VK Widget -->
+        <div id="vk_groups"></div>
+        <script type="text/javascript">
+            VK.Widgets.Group("vk_groups", {
+                mode: 0,
+                width: "1200",
+                height: "40",
+                color1: 'FFFFFF',
+                color2: '2B587A',
+                color3: '5B7FA6'
+            }, 86495283);
+        </script>
+    </div>
 
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <p class="copyright text-muted small">Copyright &copy; 2016 Tsuna Art | Сайт разработан <a href="https://vk.com/veroniksa123">Вероникой Варламовой</a></p>
+                <p class="copyright text-muted small">Copyright &copy; 2016 Tsuna Art | Сайт разработан <a
+                        href="https://vk.com/veroniksa123">Вероникой Варламовой</a></p>
             </div>
         </div>
     </div>
@@ -105,20 +116,20 @@ AppAsset::register($this);
 <!-- Custom Theme JavaScript -->
 <script>
     // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
+    $("#menu-close").click(function (e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
 
     // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
+    $("#menu-toggle").click(function (e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
 
     // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
+    $(function () {
+        $('a[href*=#]:not([href=#])').click(function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
                 var target = $(this.hash);
