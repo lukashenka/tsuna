@@ -50,7 +50,7 @@ $this->title = 'My Yii Application';
 
                 <div class="row">
                     <?php foreach ($products as $product): ?>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="portfolio-item">
                                 <a href="<?= Url::to(['site/products', "#"=>"item{$product->id}"]); ?>">
                                     <img class="img-portfolio img-responsive" height="400px"
@@ -61,7 +61,7 @@ $this->title = 'My Yii Application';
                     <?php endforeach; ?>
                 </div>
                 <!-- /.row (nested) -->
-                <a href="<?= Url::to(['site/products']); ?>" class="btn btn-dark">Все игрушки</a>
+                <a href="<?= Url::to(['site/products']); ?>" class="btn btn-lg btn-dark">Все игрушки</a>
             </div>
             <!-- /.col-lg-10 -->
         </div>

@@ -12,10 +12,10 @@ $this->title = 'My Yii Application';
             <div class="col-lg-10 col-lg-offset-1">
                 <h1 class="text-center">Мои работы</h1>
                 <hr class="small">
-                <div id="portfolio">
+                <div id="portfolio-all">
                     <?php foreach ($products as $product): ?>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="portfolio-item" id="item<?= $product->id ?>">
                                     <a href="#">
                                         <img class="img-portfolio img-responsive" height="400px"
@@ -25,11 +25,20 @@ $this->title = 'My Yii Application';
                             </div>
                             <div class="col-md-6">
                                 <div class="portfolio-list">
-                                    <ul>
-                                        <li><strong>Название: </strong><?= $product->name ?></li>
-                                        <li><strong>Цена: </strong><?= $product->price ?> р.</li>
-                                        <li><strong>Описание: </strong><?= $product->description ?> р.</li>
-                                    </ul>
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <h4 class="list-group-item-heading">Название</h4>
+                                            <p class="list-group-item-text"><?= $product->name ?></p>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <h4 class="list-group-item-heading">Цена</h4>
+                                            <p class="list-group-item-text"><span class="price"><?= $product->price ?> р.</span> </p>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <h4 class="list-group-item-heading">Описание</h4>
+                                            <p class="list-group-item-text"><?= $product->description ?></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

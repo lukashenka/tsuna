@@ -51,7 +51,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
 
-        $products = Product::find()->orderBy("rand()")->limit(4)->all();
+        $products = Product::find()->orderBy("rand()")->limit(6)->all();
         return $this->render('index', ["products" => $products]);
     }
 

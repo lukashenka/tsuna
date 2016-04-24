@@ -13,11 +13,11 @@ body {
 }
 
 body.tsuna {
-    background: #F1DFC9;
+
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .text-vertical-center {
@@ -39,27 +39,27 @@ body {
 .btn-dark {
     border-radius: 0;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-light {
     border-radius: 0;
     color: #333;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
 
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
     color: #333;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Custom Horizontal Rule */
@@ -109,7 +109,7 @@ hr.small {
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .sidebar-nav li a:active,
@@ -169,6 +169,8 @@ hr.small {
 
 .header h3 {
     color: whitesmoke;
+    background: rgba(0, 0, 0, 0.34);
+    padding: 20px;
 }
 
 /* About */
@@ -193,7 +195,7 @@ hr.small {
     display: table;
     width: 100%;
     height: 228px;
-    color: black;
+    color: whitesmoke;
 
     text-shadow: 1px 1px 1px black;
     background: url(../img/1.png) no-repeat center center scroll;
@@ -204,6 +206,25 @@ hr.small {
 }
 
 /* Portfolio */
+section#portfolio {
+    background: #2F2F2F;
+}
+section#portfolio{
+    color: white;
+}
+
+#portfolio-all .row {
+    border-bottom: 1px solid rgba(185, 154, 85, 0.22);
+    margin: 20px 0;
+    padding: 10px;
+    background: white;
+    color: black;
+}
+
+#portfolio-all .price {
+    padding: 5px;
+    background: yellow;
+}
 
 .portfolio {
     padding: 50px 0;
@@ -234,6 +255,11 @@ hr.small {
     padding: 50px 0;
 }
 
+.call-to-action h3{
+    color: white;
+    text-shadow: 1px 1px 5px #242424;
+}
+
 .call-to-action .btn {
     margin: 10px;
 }
@@ -244,7 +270,7 @@ hr.small {
     height: 500px;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
     .map {
         height: 75%;
     }
@@ -256,16 +282,18 @@ footer {
     padding: 10px 0;
 }
 
-#portfolio .portfolio-item{
+#portfolio .portfolio-item {
     width: 400px;
     height: 350px;
     overflow: hidden;
 
 }
+
 #portfolio .row {
-    background: whitesmoke;
+
 }
-#portfolio .portfolio-item img{
+
+#portfolio .portfolio-item img {
     width: 500px;
     height: 400px;
     margin: -50px 0 0 -100px;
