@@ -209,7 +209,7 @@ hr.small {
 }
 
 .site-about .background {
-    height: 1450px;
+    height: 1850px;
     filter: blur(5px) saturate(30%);
     -webkit-filter: blur(5px) brightness(1);
     -moz-filter: blur(5px) brightness(1);
