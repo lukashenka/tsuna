@@ -17,6 +17,12 @@ use kartik\file\FileInput;
 
     <?= $form->field($model, 'image')->widget(FileInput::classname(), [
         'options' => ['accept' => 'image/*'],
+        'pluginOptions' => [
+            'initialPreview'=>[
+                Html::img("/data/products/{$model->image}", ['class'=>'file-preview-image', 'alt'=>'The Moon', 'title'=>'The Moon']),
+        ],
+            'overwriteInitial'=>true
+        ]
     ]); ?>
 
     <?= $form->field($model, 'price')->textInput() ?>
