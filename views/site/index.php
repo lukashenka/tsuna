@@ -4,7 +4,7 @@ use yii\helpers\Url;
 /* @var $this yii\web\View */
 /* @var $products \app\models\db\Product[] */
 
-$this->title = 'My Yii Application';
+$this->title = 'Tsuna ART';
 ?>
 
 <!-- Header -->
@@ -76,7 +76,7 @@ $this->title = 'My Yii Application';
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h3>Понравились работы?</h3>
-                <a href="#" class="btn btn-lg btn-light">Закажи сейчас!</a>
+                <a href="<?= Url::to(['site/contact']); ?>" class="btn btn-lg btn-light">Закажи сейчас!</a>
             </div>
         </div>
     </div>

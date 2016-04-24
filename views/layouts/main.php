@@ -82,7 +82,7 @@ AppAsset::register($this);
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <p class="copyright text-muted small">Copyright &copy; © 2016 Tsuna Art | Сайт разработан Вероникой Варламовой</p>
+                <p class="copyright text-muted small">Copyright &copy; 2016 Tsuna Art | Сайт разработан <a href="https://vk.com/veroniksa123">Вероникой Варламовой</a></p>
             </div>
         </div>
     </div>

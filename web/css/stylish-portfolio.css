@@ -183,6 +183,44 @@ hr.small {
 
 .services {
     padding: 50px 0;
+    height: 700px;
+    color: white;
+}
+
+.services .background{
+    height: 600px;
+    position: absolute;
+    width: 100%;
+    background: url(../img/1.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    filter: blur(5px) brightness(0.4);
+    -webkit-filter: blur(5px) brightness(0.4);
+    -moz-filter: blur(5px) brightness(0.4);
+    -o-filter: blur(5px) brightness(0.4);
+    -ms-filter: blur(5px) brightness(0.4);
+}
+
+.site-about .services {
+    height: 1450px;
+    color: black;
+}
+
+.site-about .background {
+    height: 1450px;
+    filter: blur(5px) saturate(30%);
+    -webkit-filter: blur(5px) brightness(1);
+    -moz-filter: blur(5px) brightness(1);
+    -o-filter: blur(5px) brightness(1);
+    -ms-filter: blur(5px) brightness(1);
+}
+.site-about {
+    margin-bottom: 100px;
+}
+.site-about .content-info {
+    font-size: 1.2em;
 }
 
 .service-item {
@@ -209,7 +247,8 @@ hr.small {
 section#portfolio {
     background: #2F2F2F;
 }
-section#portfolio{
+
+section#portfolio {
     color: white;
 }
 
@@ -255,7 +294,7 @@ section#portfolio{
     padding: 50px 0;
 }
 
-.call-to-action h3{
+.call-to-action h3 {
     color: white;
     text-shadow: 1px 1px 5px #242424;
 }
