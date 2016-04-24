@@ -1,53 +1,83 @@
 <?php
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
+/* @var $products \app\models\db\Product[] */
 
 $this->title = 'My Yii Application';
 ?>
-<div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+<!-- Header -->
+<header id="top" class="header">
+    <div class="text-vertical-center">
+        <h1>Tsuna ART</h1>
+        <h3>Авторские игрушки ручной работы от Юлии Жак</h3>
+        <br>
+        <a href="<?= Url::to(['site/about']); ?>" class="btn btn-dark btn-lg">Информация</a>
     </div>
+</header>
 
-    <div class="body-content">
 
+<!-- About -->
+<section id="about" class="about">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+            <div class="col-lg-12 text-center">
+                <h2>Добро пожаловать на мой сайт!</h2>
+                <p class="lead">Рада приветствовать вас в своей мастерской! Вы можете встретить тут и необычных зверей и
+                    вполне знакомых, которые станут вам добрыми друзьями!
+                </p>
             </div>
         </div>
-
+        <!-- /.row -->
     </div>
-</div>
+    <!-- /.container -->
+</section>
+<!-- Callout -->
+<aside class="callout">
+    <div class="text-vertical-center">
+        <h2>Все игрушки ручной работы</h2>
+    </div>
+</aside>
+
+<!-- Portfolio -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h2>Мои работы</h2>
+                <hr class="small">
+
+                <div class="row">
+                    <?php foreach ($products as $product): ?>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="<?= Url::to(['site/products', "#"=>"item{$product->id}"]); ?>">
+                                    <img class="img-portfolio img-responsive" height="400px"
+                                         src="data/products/<?= $product->image ?>">
+                                </a>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                <!-- /.row (nested) -->
+                <a href="<?= Url::to(['site/products']); ?>" class="btn btn-dark">Все игрушки</a>
+            </div>
+            <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<!-- Call to Action -->
+<aside class="call-to-action bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3>Понравились работы?</h3>
+                <a href="#" class="btn btn-lg btn-light">Закажи сейчас!</a>
+            </div>
+        </div>
+    </div>
+</aside>
