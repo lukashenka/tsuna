@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <h1><?= Html::encode($this->title) ?></h1>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-4 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -25,10 +25,10 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <h4>
                                     <strong>Skype</strong>
                                 </h4>
-                                <p>dsfsd</p>
+                                <p>uk_joyster</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-4 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -37,10 +37,10 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <h4>
                                     <strong>Email</strong>
                                 </h4>
-                                <p>dsfsd</p>
+                                <a href="mailto:uk_joyster@mail.ru">uk_joyster@mail.ru</a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-4 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -49,7 +49,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <h4>
                                     <strong>Телефон</strong>
                                 </h4>
-                                <p>88005553555</p>
+                                <p>+375295332470</p>
                             </div>
                         </div>
                     </div>
