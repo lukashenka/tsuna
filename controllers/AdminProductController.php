@@ -32,6 +32,12 @@ class AdminProductController extends Controller
                     'delete' => ['POST'],
                 ],
             ],
+            'basicAuth' => [
+            'class' => \yii\filters\auth\HttpBasicAuth::className(),
+            'auth' => function ($username, $password) {
+                return $username == "tsuna" && $password == "tsuna";
+            }
+            ],
         ];
     }
 
