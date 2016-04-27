@@ -34,6 +34,12 @@ body {
     font-family: 'Indie Flower', cursive;
 }
 
+.navbar-brand.topnav {
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: 'Indie Flower', cursive;
+}
+
 /* Custom Button Styles */
 
 .btn-dark {
@@ -187,11 +193,36 @@ hr.small {
     color: white;
 }
 
-.services .background{
-    height: 600px;
+.services .background {
+    height: 700px;
     position: absolute;
     width: 100%;
     background: url(../img/1.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    filter: blur(5px) brightness(0.4);
+    -webkit-filter: blur(5px) brightness(0.4);
+    -moz-filter: blur(5px) brightness(0.4);
+    -o-filter: blur(5px) brightness(0.4);
+    -ms-filter: blur(5px) brightness(0.4);
+}
+
+.site-contact-form {
+    padding: 50px 0;
+    height: 700px;
+    color: white;
+}
+.help-block.help-block-error {
+    background: rgb(255, 234, 234);
+    border-radius: 6px;
+}
+.site-contact-form  .background {
+    height: 700px;
+    position: absolute;
+    width: 100%;
+    background: url(../img/1.png) no-repeat left center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -216,9 +247,11 @@ hr.small {
     -o-filter: blur(5px) brightness(1);
     -ms-filter: blur(5px) brightness(1);
 }
+
 .site-about {
     margin-bottom: 100px;
 }
+
 .site-about .content-info {
     font-size: 1.2em;
 }

@@ -17,7 +17,7 @@ $this->title = 'My Yii Application';
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="portfolio-item" id="item<?= $product->id ?>">
-                                    <a href="#">
+                                    <a class="example-image-link" href="data/products/<?= $product->image ?>" data-lightbox="example-set">
                                         <img class="img-portfolio img-responsive" height="400px"
                                              src="data/products/<?= $product->image ?>">
                                     </a>

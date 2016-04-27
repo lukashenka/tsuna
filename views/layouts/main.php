@@ -55,21 +55,26 @@ AppAsset::register($this);
             </button>
             <a class="navbar-brand topnav" href="<?= Url::to(['site/index']); ?>">Tsuna ART</a>
         </div>
+        <?php $action = \Yii::$app->requestedAction->getUniqueId() ?>
+
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
+                <li <?php if ($action == 'site/index'): ?>class="active"<?php endif; ?>>
                     <a href="<?= Url::to(['site/index']); ?>">Главная</a>
                 </li>
-                <li>
+                <li <?php if ($action == 'site/about'): ?>class="active"<?php endif; ?>>
                     <a href="<?= Url::to(['site/about']); ?>">Информация</a>
                 </li>
-                <li>
+                <li <?php if ($action == 'site/products'): ?>class="active"<?php endif; ?>>
                     <a href="<?= Url::to(['site/products']); ?>">Мои работы</a>
                 </li>
-                <li>
+                <li <?php if ($action == 'site/contact'): ?>class="active"<?php endif; ?>>
                     <a href="<?= Url::to(['site/contact']); ?>">Контакты</a>
                 </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navbar-text"><strong>Телефон: </strong> +375295332470</li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
