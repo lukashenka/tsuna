@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\db\Content;
 use app\models\db\Product;
 use Yii;
 use yii\filters\AccessControl;
@@ -77,6 +78,7 @@ class SiteController extends Controller
 
     public function actionAbout()
     {
-        return $this->render('about');
+        $content = Content::find("id = :id", ["id" => 1])->one()->content;
+        return $this->render('about', ["content" => $content]);
     }
 }

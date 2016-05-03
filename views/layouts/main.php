@@ -74,7 +74,7 @@ AppAsset::register($this);
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="navbar-text"><strong>Телефон: </strong> +375295332470</li>
+                <li class="navbar-text"><strong>Телефон: </strong> <span class="phone">+375 29 533-24-70</span></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
