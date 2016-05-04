@@ -7,6 +7,7 @@
  */
 
 namespace app\controllers;
+use app\models\User;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 
@@ -27,7 +28,7 @@ class BaseAdminController extends Controller
             'basicAuth' => [
                 'class' => \yii\filters\auth\HttpBasicAuth::className(),
                 'auth' => function ($username, $password) {
-                    return $username == "tsuna" && $password == "tsuna";
+                    return User::findByUsername($username);
                 }
             ],
         ];
